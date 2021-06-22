@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Responsive sidebar submenus</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <img src="./myimage.jpeg" alt="" class="header__img" />
+
+        <a href="#" class="header__logo">Dashboard</a>
+
+        <div class="header__search">
+          <input type="search" placeholder="Search" class="header__input" />
+          <i class="bx bx-search header__icon"></i>
+        </div>
+
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="#" class="nav__link nav__logo">
+            <i class="bx bxs-disc nav__icon"></i>
+            <span class="nav__logo-name">Priyam Seal</span>
+          </a>
+
+          <div class="nav__list">
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Profile</h3>
+
+              <a href="#" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Profile</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                    <a href="#" class="nav__dropdown-item">Mail</a>
+                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="nav__link">
+                <i class="bx bx-message-rounded nav__icon"></i>
+                <span class="nav__name">Messages</span>
+              </a>
+            </div>
+
+            <div class="nav__items">
+              <a href="./login.html"> <h3 class="nav__subtitle">Menu</h3></a>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-bell nav__icon"></i>
+
+                  <span class="nav__name">Notifications</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="./login.html" class="nav__dropdown-item"
+                      >Blocked</a
+                    >
+                    <a href="./login.html" class="nav__dropdown-item"
+                      >Silenced</a
+                    >
+                    <a href="./login.html" class="nav__dropdown-item"
+                      >Publish</a
+                    >
+                    <a href="./login.html" class="nav__dropdown-item"
+                      >Program</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="nav__link">
+                <i class="bx bx-compass nav__icon"></i>
+                <span class="nav__name">Explore</span>
+              </a>
+              <a href="#" class="nav__link">
+                <i class="bx bx-bookmark nav__icon"></i>
+                <span class="nav__name">Saved</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="nav__link nav__logout">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <main>
+      <section>
+        <p>
+          A data dashboard is an information management tool that visually
+          tracks, analyzes and displays key performance indicators (KPI),
+          metrics and key data points to monitor the health of a business,
+          department or specific process. They are customizable to meet the
+          specific needs of a department and company. Behind the scenes, a
+          dashboard connects to your files, attachments, services and API’s, but
+          on the surface displays all this data in the form of tables, line
+          charts, bar charts and gauges. A data dashboard is the most efficient
+          way to track multiple data sources because it provides a central
+          location for businesses to monitor and analyze performance. Real-time
+          monitoring reduces the hours of analyzing and long line of
+          communication that previously challenged businesses.
+        </p>
+        <p>
+          Firstly, users need to know that dashboard definition is dependent on
+          the role it plays within an organization. Everyone uses data
+          dashboards differently. Not all business dashboards serve the same
+          purpose, which is why it’s important users understand what KPIs to
+          track and why. This section will answer the following questions: What
+          kinds of business questions do dashboards answer? What type of data
+          are tracked on dashboards? How are dashboards interactive?
+        </p>
+        <p>
+          The best data dashboards answer important questions about your
+          business. Unlike advanced business intelligence tools, dashboards are
+          designed for quick analysis and informational awareness. The most
+          common approach to designing a business dashboard is to build it using
+          a question-answer format.
+        </p>
+      </section>
+    </main>
+
+    <!--========== MAIN JS ==========-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
